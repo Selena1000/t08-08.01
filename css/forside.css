@@ -12,14 +12,20 @@
 }
 
 .box {
-  background-color: #dcc2c4;
+  background-color: #801010;
   padding: 40px 20px;
   border-radius: 10px;
   align-items: center;
+  transition: all 0.4s ease-in-out;
 }
+.box:hover {
+  transform: translateY(-10px);
+  filter: brightness(1.2);
+}
+
 .box a {
   text-decoration: none;
-  color: #332202;
+  color: #ece8d5;
   font-weight: 560;
 }
 
