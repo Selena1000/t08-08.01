@@ -4,26 +4,26 @@
   box-sizing: border-box;
 }
 
-.container {
+.categorylist {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
   padding: 3em;
 }
 
-.box {
+section a {
   background-color: #801010;
   padding: 40px 20px;
   border-radius: 10px;
   align-items: center;
   transition: all 0.4s ease-in-out;
 }
-.box:hover {
+section a:hover {
   transform: translateY(-10px);
   filter: brightness(1.2);
 }
 
-.box a {
+a {
   text-decoration: none;
   color: #ece8d5;
   font-weight: 560;
@@ -40,10 +40,18 @@
   display: grid;
   grid-template-columns: repeat(2, 4fr);
 }
+.split a {
+  color: #801010;
+}
 
 .smallpush {
   display: flex;
   justify-content: end;
   gap: 10px;
   margin-right: 20px;
+}
+
+a {
+  font-style: italic;
+  text-decoration: wavy;
 }
