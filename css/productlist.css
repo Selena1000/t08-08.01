@@ -1,14 +1,9 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 40px;
-}
-
 h1 {
   margin-bottom: 30px;
 }
 
 .product_list_container {
-  display: grid;
+  display: subgrid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
 }
@@ -60,4 +55,8 @@ h1 {
   color: black;
   padding: 6px 10px;
   font-weight: bold;
+}
+
+.overlay {
+  opacity: 0.5;
 }
