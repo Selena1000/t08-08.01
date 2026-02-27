@@ -9,6 +9,12 @@
   grid-template-columns: repeat(2, 4fr);
 }
 
+.split a {
+  color: #801010;
+  font-style: italic;
+  text-decoration: none;
+}
+
 .smallpush {
   display: flex;
   justify-content: end;
@@ -20,10 +26,19 @@ body {
   background-color: #edebdd;
 }
 
-h1 span {
+.split h1 span {
   color: red;
+  display: inline-block;
+  transform: scaleX(-1) translateX(-0.2rem);
 }
 header h1 {
   color: black;
   font-style: normal;
+  text-decoration: none;
+}
+p {
+  font-family: Helvetica, sans-serif;
+}
+header {
+  margin: 2em;
 }
