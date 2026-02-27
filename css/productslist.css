@@ -1,18 +1,15 @@
-p {
-  font-family: Helvetica, sans-serif;
-}
-.split {
+/* .split {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 2em;
-}
+} */
 
-.smallpush {
+/* .smallpush {
   display: flex;
   gap: 2em;
   font-size: 20px;
-}
+} */
 
 /*.product-content {
   display: grid;
@@ -114,5 +111,5 @@ p {
   cursor: pointer;
 }
 .add-to-cart:hover {
-  color: #f80a0a;
+  color: #801010;
 }
