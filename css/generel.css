@@ -3,7 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+header {
+  border-bottom: #801010 1.5px solid;
+}
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 .split {
   display: grid;
   grid-template-columns: repeat(2, 4fr);
@@ -21,13 +26,33 @@
   gap: 10px;
   margin-right: 20px;
 }
+.smallpush a {
+  text-decoration: none;
+  position: relative;
+}
+.smallpush a:hover {
+  color: #801010;
+}
+.smallpush a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 0;
+  height: 2px;
+  background: #801010;
+  transition: 0.3s ease;
+}
+.smallpush a:hover::after {
+  width: 100%;
+}
 
 body {
   background-color: #edebdd;
 }
 
 .split h1 span {
-  color: red;
+  color: #9f1515;
   display: inline-block;
   transform: scaleX(-1) translateX(-0.2rem);
 }
@@ -35,9 +60,6 @@ header h1 {
   color: black;
   font-style: normal;
   text-decoration: none;
-}
-p {
-  font-family: Helvetica, sans-serif;
 }
 header {
   margin: 2em;
