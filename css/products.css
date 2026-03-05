@@ -8,26 +8,54 @@
 .product_image img {
   width: 400px;
 }
-
-.product_info h1 {
-  margin-bottom: 20px;
+.product_info {
+  background-color: #801010;
+  height: 70%;
+  border-radius: 10px;
+  padding: 30px;
 }
-
+.product_info h1,
+h2 {
+  color: #edebdd;
+}
 .product_info p {
   margin-bottom: 20px;
+  color: #edebdd;
 }
 
 .buy_box {
   background: #801010;
   padding: 30px;
-  border-radius: 6px;
+  border-radius: 10px;
   height: 70%;
   width: 70%;
 }
 
-.buy_box h2 {
+.buy_box h2,
+p {
   margin-bottom: 10px;
+}
+.originalprice {
   color: #edebdd;
+}
+.priceafter {
+  display: none;
+}
+.discounted .originalprice {
+  text-decoration: line-through;
+}
+.discounted .priceafter {
+  display: block;
+  color: #edebdd;
+  font-weight: bold;
+}
+.discount-tag {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  background-color: #e53935;
+  color: white;
+  padding: 10px 14px;
 }
 
 .category {
@@ -52,7 +80,7 @@
   font-weight: bold;
   cursor: pointer;
 }
-
-.product_info {
-  margin-right: 4em;
+button:disabled {
+  background: grey;
+  cursor: not-allowed;
 }
